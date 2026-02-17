@@ -1,0 +1,173 @@
+{
+  "config": {
+    "dataset": "cifar10-c",
+    "model_name": "mobilenetv3_small",
+    "data_root": "./data",
+    "tinyimagenet_root": "./tiny-imagenet-200",
+    "epochs": 50,
+    "batch_size": 64,
+    "num_workers": 0,
+    "lr": 0.05,
+    "weight_decay": 0.0001,
+    "momentum": 0.9,
+    "input_size": 224,
+    "reject_percentiles": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "hybrid_weight_entropy": 0.5,
+    "hybrid_weight_grad": 0.5,
+    "out_dir": "./outputs"
+  },
+  "train_history": [],
+  "baseline": {
+    "test_acc": 0.07033157894736843,
+    "test_loss": 13.067567505685906
+  },
+  "uncertainty_metrics": {
+    "entropy": {
+      "AUROC_error": 0.4861017877099166,
+      "ECE": 0.7803876665463573,
+      "ARC_area": 0.05989928935969646,
+      "AvUC": 0.6908510601111476
+    },
+    "gradient": {
+      "AUROC_error": 0.5207091394323796,
+      "ECE": 0.7803876665463573,
+      "ARC_area": 0.07566116895542854,
+      "AvUC": 0.8950737627282392
+    },
+    "hybrid": {
+      "AUROC_error": 0.49153291940175214,
+      "ECE": 0.7803876665463573,
+      "ARC_area": 0.06790299684266395,
+      "AvUC": 0.7929624114316006
+    }
+  },
+  "percentile_rejection": [
+    {
+      "method": "entropy",
+      "reject_percent": 10,
+      "rejection_rate": 0.1,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07069005847953216,
+      "kept_count": 171000
+    },
+    {
+      "method": "entropy",
+      "reject_percent": 20,
+      "rejection_rate": 0.2,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07163157894736842,
+      "kept_count": 152000
+    },
+    {
+      "method": "entropy",
+      "reject_percent": 30,
+      "rejection_rate": 0.3,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07222556390977444,
+      "kept_count": 133000
+    },
+    {
+      "method": "entropy",
+      "reject_percent": 40,
+      "rejection_rate": 0.4,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07167543859649123,
+      "kept_count": 114000
+    },
+    {
+      "method": "entropy",
+      "reject_percent": 50,
+      "rejection_rate": 0.5,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07093684210526316,
+      "kept_count": 95000
+    },
+    {
+      "method": "gradient",
+      "reject_percent": 10,
+      "rejection_rate": 0.1,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07430409356725146,
+      "kept_count": 171000
+    },
+    {
+      "method": "gradient",
+      "reject_percent": 20,
+      "rejection_rate": 0.2,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07857236842105263,
+      "kept_count": 152000
+    },
+    {
+      "method": "gradient",
+      "reject_percent": 30,
+      "rejection_rate": 0.3,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07545112781954887,
+      "kept_count": 133000
+    },
+    {
+      "method": "gradient",
+      "reject_percent": 40,
+      "rejection_rate": 0.4,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.06978070175438597,
+      "kept_count": 114000
+    },
+    {
+      "method": "gradient",
+      "reject_percent": 50,
+      "rejection_rate": 0.5,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.06847368421052631,
+      "kept_count": 95000
+    },
+    {
+      "method": "hybrid",
+      "reject_percent": 10,
+      "rejection_rate": 0.1,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07036842105263158,
+      "kept_count": 171000
+    },
+    {
+      "method": "hybrid",
+      "reject_percent": 20,
+      "rejection_rate": 0.2,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.0713092105263158,
+      "kept_count": 152000
+    },
+    {
+      "method": "hybrid",
+      "reject_percent": 30,
+      "rejection_rate": 0.3,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07196240601503759,
+      "kept_count": 133000
+    },
+    {
+      "method": "hybrid",
+      "reject_percent": 40,
+      "rejection_rate": 0.4,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07156140350877192,
+      "kept_count": 114000
+    },
+    {
+      "method": "hybrid",
+      "reject_percent": 50,
+      "rejection_rate": 0.5,
+      "accuracy_before_rejection": 0.07033157894736843,
+      "accuracy_after_rejection": 0.07082105263157895,
+      "kept_count": 95000
+    }
+  ],
+  "checkpoint_path": "./outputs\\cifar10-c_mobilenetv3_small_e50_bs64.pth"
+}

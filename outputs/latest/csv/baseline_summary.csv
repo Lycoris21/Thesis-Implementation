@@ -1,0 +1,13 @@
+dataset,model,seed,epochs,batch_size,input_size,lr,weight_decay,momentum,test_acc,test_loss,checkpoint_path
+cifar10,efficientnetv2_s,,50,64,224,0.05,0.0001,0.9,0.5985,1.9074420955657958,./outputs\cifar10_efficientnetv2_s_e50_bs64.pth
+cifar10,mobilenetv3_small,,50,64,224,0.05,0.0001,0.9,0.6515,0.9899587391853333,./outputs\cifar10_mobilenetv3_small_e50_bs64.pth
+cifar10,shufflenetv2_0_5,,50,64,224,0.05,0.0001,0.9,0.7211,0.8624377721309662,./outputs\cifar10_shufflenetv2_0_5_e50_bs64.pth
+cifar100,efficientnetv2_s,,50,64,224,0.05,0.0001,0.9,0.3746,5.723050325775146,./outputs\cifar100_efficientnetv2_s_e50_bs64.pth
+cifar100,mobilenetv3_small,,50,64,224,0.05,0.0001,0.9,0.4609,2.2347293796539307,./outputs\cifar100_mobilenetv3_small_e50_bs64.pth
+cifar100,shufflenetv2_0_5,,50,64,224,0.05,0.0001,0.9,0.4275,2.398111574745178,./outputs\cifar100_shufflenetv2_0_5_e50_bs64.pth
+tinyimagenet,efficientnetv2_s,,50,64,224,0.05,0.0001,0.9,0.4052,3.2881210243225096,./outputs\tinyimagenet_efficientnetv2_s_e50_bs64.pth
+tinyimagenet,mobilenetv3_small,,50,64,224,0.05,0.0001,0.9,0.4014,2.9175116359710693,./outputs\tinyimagenet_mobilenetv3_small_e50_bs64.pth
+tinyimagenet,shufflenetv2_0_5,,50,64,224,0.05,0.0001,0.9,0.3753,2.9607975105285647,./outputs\tinyimagenet_shufflenetv2_0_5_e50_bs64.pth
+tissuemnist,efficientnetv2_s,,50,64,224,0.05,0.0001,0.9,0.6243866328257192,1.5901017165627778,./outputs\tissuemnist_efficientnetv2_s_e50_bs64.pth
+tissuemnist,mobilenetv3_small,,50,64,224,0.05,0.0001,0.9,0.6493866328257191,0.9635272755437293,./outputs\tissuemnist_mobilenetv3_small_e50_bs64.pth
+tissuemnist,shufflenetv2_0_5,,50,64,224,0.05,0.0001,0.9,0.6369923857868021,1.005847214361536,./outputs\tissuemnist_shufflenetv2_0_5_e50_bs64.pth
