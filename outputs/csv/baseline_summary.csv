@@ -17,6 +17,3 @@ tinyimagenet,shufflenetv2_0_5,42,50,64,0.05,0.0001,0.9,0.3331,2.9568953720092774
 tinyimagenet-c,efficientnetv2_s,42,50,64,0.05,0.0001,0.9,0.09843333333333333,5.054373860967,./outputs\tinyimagenet-c_efficientnetv2_s_e50_bs64.pth
 tinyimagenet-c,mobilenetv3_small,42,50,64,0.05,0.0001,0.9,0.12689733333333333,4.574265942123413,./outputs\tinyimagenet-c_mobilenetv3_small_e50_bs64.pth
 tinyimagenet-c,shufflenetv2_0_5,42,50,64,0.05,0.0001,0.9,0.09590666666666667,4.963702599756877,./outputs\tinyimagenet-c_shufflenetv2_0_5_e50_bs64.pth
-tissuemnist,efficientnetv2_s,42,50,64,0.05,0.0001,0.9,0.6045896785109983,2.0776783559931515,./outputs\tissuemnist_efficientnetv2_s_e50_bs64.pth
-tissuemnist,mobilenetv3_small,42,50,64,0.05,0.0001,0.9,0.6549280879864636,0.9806892114242322,./outputs\tissuemnist_mobilenetv3_small_e50_bs64.pth
-tissuemnist,shufflenetv2_0_5,42,50,64,0.05,0.0001,0.9,0.6389805414551607,1.0232623963993415,./outputs\tissuemnist_shufflenetv2_0_5_e50_bs64.pth
